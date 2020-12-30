@@ -11,7 +11,7 @@ pipeline{
                 sh 'mvn clean package'
             }
         }
-        stage(Tomcat_Deploy){
+/*        stage(Tomcat_Deploy){
             steps{
                sh "mv target/myweb*.war target/myweb.war"
                 sshagent(['slave-1']) {
@@ -19,6 +19,6 @@ pipeline{
                 
 }
             }
-        }
+        }*/
         }
     }
